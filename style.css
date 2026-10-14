@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    box-sizing: border-box;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    line-height: 1.6;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --pr:rgb(223, 221, 221);
+    --sr:rgb(215, 176, 176);
+    --bg:rgb(0, 0, 0);
+   --text:rgb(255, 255, 255);
+    --a-hover:rgb(188, 200, 73);
+    --img-text:red;
+}
+header{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+   text-decoration: none;
+   color: var(--text);
+   margin: 8px;
+   border-radius:2px;
+   
+}
+nav a:hover{
+    color: var(--bg);
+    background-color: var(--text);
+}
+main{
+    background-image: url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   display: flex;
+   align-items: center;
+   text-align: start;
+   margin: 12px;
+   border-radius: 12px;
+   height: 100vh;
+
+}
+
+main h1{
+    color: var(--img-text);
+    font-size: 4em;
+}
+main h2{
+    color: var(--img-text);
+    font-size: 1.6em;
+}
+main h3{
+    font-size: 1em;
+    color: var(--img-text);
+}
+section{
+    padding: 13px;
+    flex-wrap: wrap;
+    height: 100%;
+    line-height: 1.6;
+    border-bottom: 14px double rgb(154, 81, 81);
+}
+#product-section{
+   padding: 18px;
+}
+.box-texts{
+    border-bottom: 3px solid whitesmoke;
+    margin: 9px;
+    font-size: 1.4em;
+    transition: 0.4s ease-in;
+    color: var(--sr);
+    border-radius: 12px;
+}
+.box-texts:hover{
+    border-bottom: 3px solid rgb(250, 11, 11);
+    color: var(--bg);
+    background-color: var(--text);
+}
+footer{
+     padding: 18px;
+}
+.abouts-texts a{
+       text-decoration: none;
+       color: var(--text)
+       
+  ;
+  margin: 15px;
+  text-align: end;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  
+
+}
+.abouts-texts a:hover{
+    background-color: var(--text);
+    color: var(--bg);
+}
+.abouts-texts {
+    display: flex;
+    margin: 16px;
+    list-style: none;
+    justify-content: space-around;
+    height: 100%;
+    border-bottom: 2px solid rgb(212, 41, 41);
+    border-radius: 34px;
+}
+.box-texts{
+    padding: 15px;
+    /* baaki same */
+    list-style: none;
+}
+ul li a{
+    list-style: none;
+}
+
+.creter-social{
+   display: flex;
+   justify-content: space-between;
+}
